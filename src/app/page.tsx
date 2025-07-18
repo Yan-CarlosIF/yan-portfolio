@@ -15,7 +15,6 @@ import {
 } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { ThemeProvider } from '@/context/theme-provider';
-import { FooterComponent } from './components/footer';
 import { Infos } from './components/infos';
 import { ProjectComponent } from './components/project';
 
@@ -128,7 +127,6 @@ export default function Home() {
           />
         </div>
       </section>
-      <FooterComponent />
     </ThemeProvider>
   );
 }
