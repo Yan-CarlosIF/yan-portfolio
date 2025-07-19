@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Inter, Sora } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/context/theme-provider';
-import { FooterComponent } from './components/footer';
-import { HeaderComponent } from './components/header';
+import { FooterComponent } from '../components/footer';
+import { HeaderComponent } from '../components/header';
 
 const sora = Sora({
   subsets: ['latin'],
@@ -16,8 +16,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio Yan',
-  description: 'Projects and contact',
+  title: 'Yan | Portfolio ',
+  description: 'About me, projects and contact',
   icons: {
     icon: '/favicon.png',
   },

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { GrMysql } from 'react-icons/gr';
@@ -10,7 +11,11 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si';
-import { IconComponent } from '../components/icon';
+import IconComponent from '../../components/icon';
+
+export const metadata: Metadata = {
+  title: 'Sobre mim',
+};
 
 export default function About() {
   return (

@@ -1,5 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import {
@@ -15,8 +16,8 @@ import {
 } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { ThemeProvider } from '@/context/theme-provider';
-import { Infos } from './components/infos';
-import { ProjectComponent } from './components/project';
+import { Infos } from '../components/infos';
+import { ProjectComponent } from '../components/project';
 
 export default function Home() {
   return (
@@ -113,8 +114,11 @@ export default function Home() {
             contribuindo com projetos reais e escaláveis, sempre aplicando boas
             práticas de código limpo, seguro e eficiente.
           </p>
-          <Button className="mt-6 h-11 font-bold dark:bg-[#8b5cf6] dark:text-primary dark:hover:bg-[#8b5cf6]/80">
-            LER MAIS
+          <Button
+            asChild
+            className="mt-6 h-11 font-bold dark:bg-[#8b5cf6] dark:text-primary dark:hover:bg-[#8b5cf6]/80"
+          >
+            <Link href="/about">LER MAIS</Link>
           </Button>
         </div>
         <div className="relative mt-14 ml-12 h-[250px] w-[250px] rounded-xl bg-[#8b5cf6] lg:mt-0 lg:ml-0 lg:h-[300px] lg:w-[300px]">
