@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import type { IconType } from 'react-icons';
-import { Button } from '@/components/ui/button';
+import Image from "next/image";
+import Link from "next/link";
+import type { IconType } from "react-icons";
+import { Button } from "@/components/ui/button";
 
 interface ProjectProps {
   title: string;
@@ -21,13 +21,14 @@ export function ProjectComponent({
   stack,
 }: ProjectProps) {
   return (
-    <div className="max-h-[575px] max-w-[509px] border border-neutral-200 dark:border-neutral-700">
-      <div className="relative h-[309px] w-full">
+    <div className="max-h-[575px] max-w-[509px] rounded-lg border border-neutral-300 dark:border-neutral-700">
+      <div className="relative max-h-[309px] w-full rounded-t-lg">
         <Image
           alt="project preview"
-          className="object-cover"
-          fill
-          src={image ? image : '/base.png'}
+          className="rounded-t-lg object-fill"
+          height={309}
+          src={image ? image : "/base.png"}
+          width={509}
         />
       </div>
       <div className="px-4 py-6">
@@ -55,7 +56,7 @@ export function ProjectComponent({
             disabled={!demoUrl}
             variant="outline"
           >
-            <Link href={demoUrl || ''}>VER DEMO</Link>
+            <Link href={demoUrl || ""}>VER DEMO</Link>
           </Button>
         </div>
       </div>

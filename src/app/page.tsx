@@ -1,23 +1,27 @@
-import { ArrowDown } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaNodeJs, FaReact } from 'react-icons/fa';
-import { RiTailwindCssFill } from 'react-icons/ri';
+import { ArrowDown } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 import {
+  SiChakraui,
+  SiExpress,
   SiFastify,
+  SiJest,
   SiNextdotjs,
+  SiNodedotjs,
   SiPostgresql,
   SiPrisma,
   SiReactquery,
   SiShadcnui,
-  SiSqlite,
+  SiTypeorm,
   SiTypescript,
   SiVite,
-} from 'react-icons/si';
-import { Button } from '@/components/ui/button';
-import { ThemeProvider } from '@/context/theme-provider';
-import { Infos } from '../components/infos';
-import { ProjectComponent } from '../components/project';
+} from "react-icons/si";
+import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "@/context/theme-provider";
+import { Infos } from "../components/infos";
+import { ProjectComponent } from "../components/project";
 
 export default function Home() {
   return (
@@ -39,6 +43,23 @@ export default function Home() {
         </h1>
 
         <div className="mx-auto grid w-full grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
+          <ProjectComponent
+            description="O BookTu é um sistema multiplataforma fullstack desenvolvido para o controle de inventário de livros em múltiplos estabelecimentos. O sistema permite o gerenciamento de usuários, livros, categorias, estoques e inventários, com diferentes níveis de acesso para administradores e operadores."
+            image="/projects-images/book.png"
+            repoUrl="https://github.com/Yan-CarlosIF/BookTu"
+            stack={[
+              SiTypescript,
+              SiNextdotjs,
+              SiChakraui,
+              SiReactquery,
+              SiNodedotjs,
+              SiExpress,
+              SiJest,
+              SiTypeorm,
+              SiPostgresql,
+            ]}
+            title="BookTu"
+          />
           <ProjectComponent
             demoUrl="https://games-store-dashboard.vercel.app/"
             description="Este projeto consiste em um dashboard interativo desenvolvido com Next.js, criado para estudo pessoal e para a disciplina Banco de Dados I do curso de Bacharelado em Ciência da Computação."
@@ -81,21 +102,6 @@ export default function Home() {
             repoUrl="https://github.com/Yan-CarlosIF/github-blog"
             stack={[SiVite, FaReact, RiTailwindCssFill, FaNodeJs, SiTypescript]}
             title="Github Blog"
-          />
-          <ProjectComponent
-            description="Book Wise é uma aplicação Full Stack para avaliação e categorização de livros, com autenticação via GitHub, busca otimizada e interface moderna. Tecnologias utilizadas: Next.js, TypeScript, Prisma, TailwindCSS, shadcn/ui."
-            image="/projects-images/book.png"
-            repoUrl="https://github.com/Yan-CarlosIF/book-wise"
-            stack={[
-              SiNextdotjs,
-              RiTailwindCssFill,
-              SiPrisma,
-              SiPostgresql,
-              SiTypescript,
-              SiShadcnui,
-              SiSqlite,
-            ]}
-            title="Book Wise"
           />
         </div>
       </main>
