@@ -1,25 +1,25 @@
-import type { Metadata } from 'next';
-import { Inter, Sora } from 'next/font/google';
-import './globals.css';
-import { ThemeProvider } from '@/context/theme-provider';
-import { FooterComponent } from '../components/footer';
-import { HeaderComponent } from '../components/header';
+import type { Metadata } from "next";
+import { Inter, Sora } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/context/theme-provider";
+import { FooterComponent } from "../components/footer";
+import { HeaderComponent } from "../components/header";
 
 const sora = Sora({
-  subsets: ['latin'],
-  variable: '--font-sora',
+  subsets: ["latin"],
+  variable: "--font-sora",
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: 'Yan | Portfolio ',
-  description: 'About me, projects and contact',
+  title: "Yan | Portfolio ",
+  description: "About me, projects and contact",
   icons: {
-    icon: '/favicon.png',
+    icon: "/favicon.png",
   },
 };
 

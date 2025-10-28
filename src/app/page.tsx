@@ -109,10 +109,10 @@ export default function Home() {
         <div>
           <h1 className="font-bold font-sora text-3xl">Sobre mim!</h1>
           <p className="mt-6 block max-w-[500px] text-justify text-neutral-800 dark:text-primary">
-            Sou estudante de Ciência da Computação, com foco em Desenvolvimento
-            Web. Tenho paixão por criar interfaces modernas, responsivas e
-            performáticas, e estou constantemente em busca de aprender novas
-            tecnologias e aprimorar minhas habilidades.
+            Sou estudante de Ciência da Computação com foco em Desenvolvimento
+            Web e Mobile. Tenho paixão por criar interfaces modernas,
+            responsivas e performáticas, e busco constantemente aprimorar minhas
+            habilidades e explorar novas tecnologias.
           </p>
 
           <p className="mt-6 max-w-[500px] text-justify text-neutral-800 dark:text-primary">

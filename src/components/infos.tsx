@@ -1,22 +1,23 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Button } from '@/components/ui/button';
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 
 export function Infos() {
   return (
     <section className="mt-20 flex max-h-[600px] w-full max-w-[1440px] items-center">
       <div>
         <h1 className="font-bold font-sora text-[2rem] leading-12 lg:text-5xl">
-          Olá, eu me chamo Yan Carlos
+          Olá, me chamo Yan Carlos
         </h1>
         <h2 className="mt-2 font-bold font-sora text-[1.75rem] text-purple-900 leading-9 md:text-3xl dark:text-secondary">
-          Desenvolvedor Web
+          Desenvolvedor de Software
         </h2>
 
         <span className="mt-6 block max-w-[500px] text-justify text-neutral-800 md:max-w-2xl md:text-xl dark:text-neutral-50">
-          Sou desenvolvedor Web e estudante de Ciência da Computação, focado na
-          criação de aplicações modernas, responsivas e performáticas.
+          Sou Desenvolvedor Full Stack especializado em aplicações Web e Mobile,
+          com foco na criação de interfaces modernas, responsivas e de alta
+          performance.
         </span>
 
         <div className="mt-6 flex h-11 gap-4 md:mt-10">

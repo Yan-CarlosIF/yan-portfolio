@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { AlignJustify, Moon, Sun } from 'lucide-react';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { Button } from '@/components/ui/button';
+import { AlignJustify, Moon, Sun } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,9 +11,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from "@/components/ui/dropdown-menu";
 
-import { useTheme } from '@/context/theme-provider';
+import { useTheme } from "@/context/theme-provider";
 
 export function HeaderComponent() {
   const { toggleTheme, theme } = useTheme();
@@ -26,9 +26,9 @@ export function HeaderComponent() {
     }
 
     updateSize();
-    window.addEventListener('resize', updateSize);
+    window.addEventListener("resize", updateSize);
 
-    return () => window.removeEventListener('resize', updateSize);
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
   return (
@@ -54,7 +54,7 @@ export function HeaderComponent() {
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild className="w-full">
               <Button onClick={toggleTheme} variant="ghost">
-                {theme === 'dark' ? (
+                {theme === "dark" ? (
                   <Moon className="size-6" />
                 ) : (
                   <Sun className="size-6" />
@@ -68,8 +68,7 @@ export function HeaderComponent() {
           <li>
             <Button
               asChild
-              className="text-black text-md dark:text-primary"
-              variant="link"
+              className="rounded-none border-b border-b-transparent bg-transparent text-black text-md shadow-none transition-all duration-300 ease-in-out hover:border-b-black hover:bg-transparent dark:text-primary dark:hover:border-b-white"
             >
               <Link href="/">Home</Link>
             </Button>
@@ -78,8 +77,7 @@ export function HeaderComponent() {
           <li>
             <Button
               asChild
-              className="text-black text-md dark:text-primary"
-              variant="link"
+              className="rounded-none border-b border-b-transparent bg-transparent text-black text-md shadow-none transition-all duration-300 ease-in-out hover:border-b-black hover:bg-transparent dark:text-primary dark:hover:border-b-white"
             >
               <Link href="#projects">Projetos</Link>
             </Button>
@@ -87,8 +85,7 @@ export function HeaderComponent() {
           <li>
             <Button
               asChild
-              className="text-black text-md dark:text-primary"
-              variant="link"
+              className="rounded-none border-b border-b-transparent bg-transparent text-black text-md shadow-none transition-all duration-300 ease-in-out hover:border-b-black hover:bg-transparent dark:text-primary dark:hover:border-b-white"
             >
               <Link href="/about">Sobre</Link>
             </Button>
@@ -100,7 +97,7 @@ export function HeaderComponent() {
               onClick={toggleTheme}
               variant="ghost"
             >
-              {theme === 'dark' ? (
+              {theme === "dark" ? (
                 <Moon className="size-6" />
               ) : (
                 <Sun className="size-6" />

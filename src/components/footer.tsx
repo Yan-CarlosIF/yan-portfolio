@@ -1,7 +1,7 @@
-import { ArrowUp, Mail } from 'lucide-react';
-import Link from 'next/link';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Button } from '@/components/ui/button';
+import { ArrowUp, Mail } from "lucide-react";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 
 export function FooterComponent() {
   return (
@@ -44,19 +44,15 @@ export function FooterComponent() {
       </div>
       <Button
         asChild
-        className="group mx-auto mt-6 font-medium text-black text-md dark:text-white"
-        variant="link"
+        className="group mx-auto mt-6 rounded-none border-b border-b-transparent bg-transparent font-medium text-black text-md shadow-none transition-all duration-300 ease-in-out hover:border-b-black hover:bg-transparent dark:text-white dark:hover:border-b-white"
       >
         <a href="#home">
           Voltar para o topo
-          <ArrowUp
-            className="transition-transform group-hover:animate-caret-blink"
-            size={16}
-          />
+          <ArrowUp className="group-hover:animate-caret-blink" size={16} />
         </a>
       </Button>
       <p className="mt-4 text-center text-neutral-900 text-sm dark:text-primary">
-        © Desenvolvido por <strong className="text-primary">Yan Carlos</strong>{' '}
+        © Desenvolvido por <strong className="text-primary">Yan Carlos</strong>{" "}
         ✌🏽
       </p>
     </footer>
